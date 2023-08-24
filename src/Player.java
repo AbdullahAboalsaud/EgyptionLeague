@@ -10,15 +10,16 @@
 public class Player {
     private String name;
     private int number;
-    private String team;
+    private Team team;
     private int age;
     private int score;
+    int rank;
     private String role;
 
     public Player() {
     }
 
-    Player(String name, int number, String team, int age , int score, String role){
+    Player(String name, int number, Team team, int age , int score, String role){
         this.name=name;
         this.number=number;
         this.team=team;
@@ -37,10 +38,13 @@ public class Player {
     }
     
     
-    public String getTeam(){
+    public Team getTeam(){
         return team;
     }
-    
+
+    public int getRank() {
+        return rank;
+    }
     
     public int getAge(){
         return age;
@@ -49,6 +53,7 @@ public class Player {
     public int getScore(){
         return score;
     }
+
     
     public String getRole(){
         return name;
@@ -68,7 +73,7 @@ public class Player {
     public void updateRole(String role){
         this.role=role;
     }
-    public void updateTeam( String team){
+    public void updateTeam( Team team){
     this.team=team;
     }
 }

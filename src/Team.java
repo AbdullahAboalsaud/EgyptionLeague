@@ -7,8 +7,11 @@ public class Team {
     private List <Player> playersOfTheTeam = new ArrayList<Player>();
     private Player player;
     private int totalScore;
-    
-    Team(String name ,int id,Player player,int totalScore){
+
+    public Team() {
+    }
+
+    Team(String name , int id, Player player, int totalScore){
         this.name=name;
         this.player=player;
         this.id=id;
