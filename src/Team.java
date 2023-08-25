@@ -11,6 +11,10 @@ public class Team {
     public Team() {
     }
 
+    public Team(String name) {
+        this.name= name;
+    }
+
     Team(String name , int id, Player player, int totalScore){
         this.name=name;
         this.player=player;
